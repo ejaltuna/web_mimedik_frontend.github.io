@@ -87,11 +87,11 @@
             <!-- Header Start -->
             <div class="container-fluid bg-breadcrumb">
                 <div class="container text-center py-5" style="max-width: 900px;">
-                    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Contact Us</h4>
+                    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Contacto</h4>
                     <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                        <li class="breadcrumb-item active text-primary">Contact</li>
+                        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                        
+                        <li class="breadcrumb-item active text-primary">Contacto</li>
                     </ol>    
                 </div>
             </div>
@@ -124,51 +124,51 @@
                 <div class="row g-5">
                     <div class="col-lg-6 h-100 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="text-center mx-auto pb-5" style="max-width: 800px;">
-                            <h4 class="text-uppercase text-primary">Let’s Connect</h4>
-                            <h1 class="display-3 text-capitalize mb-3">Send Your Message</h1>
-                            <p class="mb-0">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a class="text-primary fw-bold" href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+                            <h4 class="text-uppercase text-primary">Contactanos</h4>
+                            <h1 class="display-3 text-capitalize mb-3">Envianos tus mensajes</h1>
+                            <!-- <p class="mb-0">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a class="text-primary fw-bold" href="https://htmlcodex.com/contact-form">Download Now</a>.</p> -->
                         </div>
-                        <form>
+                        <form  action="send_email.php" method="post">
                             <div class="row g-4">
                                 <div class="col-lg-12 col-xl-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control border-0" id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
+                                        <input type="text" class="form-control border-0" name="name" placeholder="Nombre y apellido">
+                                        <label for="name">Nombre</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-xl-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control border-0" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
+                                        <input type="email" class="form-control border-0" name="email" placeholder="tu Correo">
+                                        <label for="email">Correo</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-xl-6">
                                     <div class="form-floating">
-                                        <input type="phone" class="form-control border-0" id="phone" placeholder="Phone">
-                                        <label for="phone">Your Phone</label>
+                                        <input type="phone" class="form-control border-0" name="phone" placeholder="Phone">
+                                        <label for="phone">Telefono</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-xl-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control border-0" id="subject" placeholder="Subject">
-                                        <label for="subject">Subject</label>
+                                        <input type="text" class="form-control border-0" name="subject" placeholder="Subject">
+                                        <label for="subject">Titulo</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 175px"></textarea>
-                                        <label for="message">Message</label>
+                                        <textarea class="form-control border-0" placeholder="Leave a message here" name="message" style="height: 175px"></textarea>
+                                        <label for="message">Descripcion del mensaje</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3">Send Message</button>
+                                    <button class="btn btn-primary w-100 py-3" >Enviar mensaje</button>
                                 </div>
                             </div>
                         </form>
                     </div>
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
                         <div class="row g-4">
-                            <div class="col-12">
+                            <!-- <div class="col-12">
                                 <div class="d-inline-flex rounded bg-white w-100 p-4">
                                     <i class="fas fa-map-marker-alt fa-2x text-secondary me-4"></i>
                                     <div>
@@ -176,13 +176,13 @@
                                         <p class="mb-0">123 North tower New York, USA</p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="col-lg-12 col-xl-6">
                                 <div class="d-inline-flex rounded bg-white w-100 p-4">
                                     <i class="fas fa-envelope fa-2x text-secondary me-4"></i>
                                     <div>
-                                        <h4>Mail Us</h4>
-                                        <p class="mb-0">info@example.com</p>
+                                        <h4>Correo</h4>
+                                        <p class="mb-0">medicentromimedik@hotmail.com</p>
                                     </div>
                                 </div>
                             </div>
@@ -190,8 +190,12 @@
                                 <div class="d-inline-flex rounded bg-white w-100 p-4">
                                     <i class="fa fa-phone-alt fa-2x text-secondary me-4"></i>
                                     <div>
-                                        <h4>Telephone</h4>
-                                        <p class="mb-0">(+012) 3456 7890 123</p>
+                                        <h4>SUCRE</h4>
+                                        <p class="mb-0">(07) 2924324</p>
+                                        <h4>BOYACÁ</h4>
+                                        <p class="mb-0"> (07) 2924324</p>
+                                        <h4>LABORATORIO</h4>
+                                        <p class="mb-0">(07) 2924324</p>
                                     </div>
                                 </div>
                             </div>
@@ -230,7 +234,7 @@
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
                             <div class="footer-item">
-                                <h3 class="text-white mb-4"><i class="fas fa-map text-primary me-3"></i>SUCRE</h3>
+                                <h3 class="text-white mb-4"><i class="fas fa-map text-primary me-3"></i></h3>
                                 <p class="  text-white">Sucre entre Guayas y 9 de Mayo (diagonal a almacenes TÍA)
                                     TELF. (07) 2924324 – EXT. 100
                                     LUNES A VIERNES – 08H00 A 20H00
@@ -266,7 +270,7 @@
                             </div> 
                         </div>                        
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
+                    <!-- <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
                             <h4 class="text-white mb-4">Contact Info</h4>
                             <a href="#"><i class="fa fa-map-marker-alt me-2"></i> 123 Street, New York, USA</a>
@@ -275,7 +279,7 @@
                             <a href="tel:+012 345 67890"><i class="fas fa-phone me-2"></i> +012 345 67890</a>
                             <a href="tel:+012 345 67890" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
