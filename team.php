@@ -1,3 +1,15 @@
+<?php 
+require_once('conexion.php'); // Ensure the path is correct and accessible
+// $conn = new mysqli("localhost","root","","mimedik");
+/// resto del codigo
+$consul = $mysqli->query("select medico.*, especialidad.descipcion as especialidad  from medico, especialidad WHERE  medico.id_especialidad = especialidad.id");
+
+                          
+while ($fill = $consul->fetch_assoc()) {
+   
+//   echo '<p value="' . $fill['id'] . '">' . $fill['nombres'] . ' --> $' . $fill['id_especialidad'] . ' <smail class="text-red">'.$fill['apellidos'].'</smail>  </p>';
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -76,7 +88,7 @@
                                 
                             </div>
                         </div>
-                        <a href="team.html" class="nav-item nav-link active">Staff Medico</a>
+                        <a href="team.php" class="nav-item nav-link active">Staff Medico</a>
                         <!-- <a href="service.html" class="nav-item nav-link">Servicios Medicos</a> -->
                         <!-- <a href="blog.html" class="nav-item nav-link">Blog</a> -->
                      
@@ -125,98 +137,54 @@
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
                     <h4 class="text-uppercase text-primary">Medicos</h4>
                     <h1 class="display-3 text-capitalize mb-3">Contamos con los medicos más capacitados.</h1>
-                    <p class="mb-5 fs-5 text-black fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.5s" style="animation-delay: 1.5s;"> Encuentra un médico según tu necesidad, en <strong> Mi Medik</strong> contamos con un staff altamente capacitado para atenderte. </p> 
-                   
+                    <p class="mb-5 fs-5 text-black fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.5s" style="animation-delay: 1.5s;"> Encuentra un médico según tu necesidad, en <strong> Mimedik</strong> contamos con un staff altamente capacitado para atenderte. </p> 
+                    <h1>Buscar medico</h1>
+                    <input type="text" id="search" onKeyDown="Buscar()" class="form-control" placeholder="Buscar...">
+                    <div id="results" class="row mt-3"></div>
                 </div>
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="team-item p-4">
-                            <div class="team-inner rounded">
-                                <div class="team-img">
-                                    <img src="img/team-1.jpg" class="img-fluid rounded-top w-100" alt="Image">
-                                    <div class="team-share">
-                                        <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href=""><i class="fas fa-share-alt"></i></a>
-                                    </div>
-                                    <div class="team-icon rounded-pill py-2 px-2">
-                                        <a class="btn btn-secondary btn-sm-square rounded-pill mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-secondary btn-sm-square rounded-pill me-1" href=""><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-secondary btn-sm-square rounded-pill me-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                        <a class="btn btn-secondary btn-sm-square rounded-pill me-1" href=""><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                                <div class="bg-light rounded-bottom text-center py-4">
-                                    <h4 class="mb-3">Hard Branots</h4>
-                                    <p class="mb-0">CEO & Founder</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="team-item p-4">
-                            <div class="team-inner rounded">
-                                <div class="team-img">
-                                    <img src="img/team-2.jpg" class="img-fluid rounded-top w-100" alt="Image">
-                                    <div class="team-share">
-                                        <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href=""><i class="fas fa-share-alt"></i></a>
-                                    </div>
-                                    <div class="team-icon rounded-pill py-2 px-2">
-                                        <a class="btn btn-secondary btn-sm-square rounded-pill mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-secondary btn-sm-square rounded-pill me-1" href=""><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-secondary btn-sm-square rounded-pill me-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                        <a class="btn btn-secondary btn-sm-square rounded-pill me-1" href=""><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                                <div class="bg-light rounded-bottom text-center py-4">
-                                    <h4 class="mb-3">Hard Branots</h4>
-                                    <p class="mb-0">CEO & Founder</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="team-item p-4">
-                            <div class="team-inner rounded">
-                                <div class="team-img">
-                                    <img src="img/team-3.jpg" class="img-fluid rounded-top w-100" alt="Image">
-                                    <div class="team-share">
-                                        <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href=""><i class="fas fa-share-alt"></i></a>
-                                    </div>
-                                    <div class="team-icon rounded-pill py-2 px-2">
-                                        <a class="btn btn-secondary btn-sm-square rounded-pill mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-secondary btn-sm-square rounded-pill me-1" href=""><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-secondary btn-sm-square rounded-pill me-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                        <a class="btn btn-secondary btn-sm-square rounded-pill me-1" href=""><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                                <div class="bg-light rounded-bottom text-center py-4">
-                                    <h4 class="mb-3">Hard Branots</h4>
-                                    <p class="mb-0">CEO & Founder</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="team-item p-4">
-                            <div class="team-inner rounded">
-                                <div class="team-img">
-                                    <img src="img/team-4.jpg" class="img-fluid rounded-top w-100" alt="Image">
-                                    <div class="team-share">
-                                        <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href=""><i class="fas fa-share-alt"></i></a>
-                                    </div>
-                                    <div class="team-icon rounded-pill py-2 px-2">
-                                        <a class="btn btn-secondary btn-sm-square rounded-pill mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-secondary btn-sm-square rounded-pill me-1" href=""><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-secondary btn-sm-square rounded-pill me-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                        <a class="btn btn-secondary btn-sm-square rounded-pill me-1" href=""><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                                <div class="bg-light rounded-bottom text-center py-4">
-                                    <h4 class="mb-3">Hard Branots</h4>
-                                    <p class="mb-0">CEO & Founder</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                
+                 
+                
+              
+                <div class="row g-4" id="card-Medico">
+                    <?php 
+                    //  $sql = "SELECT medico.*, especialidad.descipcion as especialidad  FROM medico, especialidad WHERE  medico.id_especialidad = especialidad.id"; // Cambia 'cards' por tu tabla
+                     $sql = "SELECT * FROM medicos"; // Cambia 'cards' por tu tabla
+                     // $result = mysqli_query($conn, $sql);
+                     $consul = $mysqli->query($sql);
+                 
+                     if (mysqli_num_rows($consul) > 0) {
+                         while ($row = mysqli_fetch_assoc($consul)) {
+                             echo ' <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s" id="card-Medico">';
+                             echo '<div class="team-item p-4">';
+                             echo '<div class="team-inner rounded">';
+                                 echo '<div class="team-img">';
+                                     echo '<img src="img/team-2.jpg" class="img-fluid rounded-top w-100" alt="Image">';
+                                     echo '<div class="team-share">';
+                                         echo '<a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href=""><i class="fas fa-share-alt"></i></a>';
+                                     echo '</div>';
+                                     echo '<div class="team-icon rounded-pill py-2 px-2">';
+                                         echo '<a class="btn btn-secondary btn-sm-square rounded-pill mx-1" href=""><i class="fab fa-facebook-f"></i></a>';
+                                         echo '<a class="btn btn-secondary btn-sm-square rounded-pill me-1" href=""><i class="fab fa-twitter"></i></a>';
+                                         echo '<a class="btn btn-secondary btn-sm-square rounded-pill me-1" href=""><i class="fab fa-linkedin-in"></i></a>';
+                                         echo '<a class="btn btn-secondary btn-sm-square rounded-pill me-1" href=""><i class="fab fa-instagram"></i></a>';
+                                     echo '</div>';
+                                 echo '</div>';
+                                 echo '<div class="bg-light rounded-bottom text-center py-2 px-1">';
+                                     echo '<h6 class="mb-1">' . $row['nombre'] . '</h6>';
+                                     echo '<p class="mb-2">' . $row['especialidad'] . '</p>';
+                                     echo '<p class="mb-0">' . $row['horario'] . '</p>';
+                                 echo '</div>';
+                             echo '</div>';
+                         echo '</div>';
+                         echo '</div>';
+                          
+                         }
+                     } else {
+                         echo '<p>No se encontraron resultados.</p>';
+                     }
+                    ?>
+                   <!-- //aqui  el card de medicos -->
                 </div>
             </div>
         </div>
@@ -244,7 +212,7 @@
                         <div class="col-md-6 col-lg-6 col-xl-3">
                             <div class="footer-item d-flex flex-column">
                                 <div class="footer-item">
-                                    <h3 class="text-white mb-4"><i class="fas fa-map text-primary me-3"></i></h3>
+                                    <h3 class="text-white mb-4"><i class="fas fa-map text-primary me-3"></i>SUCRE</h3>
                                     <p class="  text-white">Sucre entre Guayas y 9 de Mayo (diagonal a almacenes TÍA)
                                         TELF. (07) 2924324 – EXT. 100
                                         LUNES A VIERNES – 08H00 A 20H00
@@ -327,6 +295,25 @@
 
     <!-- Mimedikdiseño Javascript -->
     <script src="js/main.js"></script>
+    <script  type="text/javascript">
+    
+
+  function Buscar(){
+        var query = $('#search').val();
+        console.log(query,'ingreso');
+        $.ajax({
+            url: 'consulta.php',
+            method: 'POST',
+            data: {query: query},
+            success: function(data){
+                $('#card-Medico').html("");
+                console.log(data,'dataaaaaaaaa');
+
+                $('#card-Medico').html(data);
+            }
+        });
+    };
+    </script>
     </body>
 
 </html>
