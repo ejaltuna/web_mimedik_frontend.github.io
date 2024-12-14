@@ -11,7 +11,7 @@ while ($fill = $consul->fetch_assoc()) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -24,9 +24,8 @@ while ($fill = $consul->fetch_assoc()) {
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"> 
-
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Icon Font Stylesheet -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
     <link rel="stylesheet" href="css/fontawesome.css"/>
@@ -55,11 +54,11 @@ while ($fill = $consul->fetch_assoc()) {
         <!-- Spinner End -->
 
         <!-- Navbar & Hero Start -->
-        <div class="container-fluid position-relative p-0">
+        <div class="container-fluid position-relative p-0 montserrat">
             <nav class="navbar navbar-expand-lg navbar-light px-5 px-lg-4 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-2">
                      
-                    <img src="img/logo1.png" alt="Logo">
+                    <img src="img/Logo.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -73,18 +72,18 @@ while ($fill = $consul->fetch_assoc()) {
                         <!-- <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Servicios Medicos</a>
                             <div class="dropdown-menu m-0">
-                                <a href="#" class="dropdown-item">Our Feature</a>
-                                <a href="#" class="dropdown-item">Our Product</a>
-                                <a href="#" class="dropdown-item">Our Team</a>
+                                 <a href="sedeSucre.html" class="dropdown-item active">SUCRE</a>
+                                <a href="sedeBoyaca.html" class="dropdown-item">BOYACÁ</a>
+                                <a href="sedeLaboratorio.html" class="dropdown-item">LABORATORIO</a>
                                 
                             </div>
                         </div> -->
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sedes</a>
                             <div class="dropdown-menu m-0">
-                                <a href="#" class="dropdown-item">Our Feature</a>
-                                <a href="#" class="dropdown-item">Our Product</a>
-                                <a href="#" class="dropdown-item">Our Team</a>
+                                 <a href="sedeSucre.html" class="dropdown-item active">SUCRE</a>
+                                <a href="sedeBoyaca.html" class="dropdown-item">BOYACÁ</a>
+                                <a href="sedeLaboratorio.html" class="dropdown-item">LABORATORIO</a>
                                 
                             </div>
                         </div>
