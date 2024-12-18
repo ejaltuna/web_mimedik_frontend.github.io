@@ -756,7 +756,7 @@
 }
 
 .blog .blog-item:hover .blog-img::after {
-    background: rgba(0, 209, 249, 0.2);
+    background: rgb(227 0 126 / 52%);;
 }
 
 .blog .blog-item .blog-date {
@@ -808,7 +808,8 @@
     left: 0;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background: rgba(0, 209, 249, 0.2);
+    /* background: rgba(0, 209, 249, 0.2); */
+    background: rgb(227 0 126 / 52%);
     transition: 0.5s;
     z-index: 3;
 }
