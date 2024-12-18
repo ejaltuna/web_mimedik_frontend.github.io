@@ -419,6 +419,17 @@
     overflow: hidden;
     background:linear-gradient(rgb(164 203 93 / 70%), rgba(0, 20, 66, 0.7)), url(../img/sede1.png);
     background-position: center ;
+    /* background-position: center top; */;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0 0px 0;
+    transition: 0.5s;
+}
+.bg-breadcrumb-about2{
+    position: relative;
+    overflow: hidden;
+    background:linear-gradient( rgb(227 0 126 / 42%),rgb(18, 157, 52)), url(../img/sede1.png);
+    background-position: center ;
     /* background-position: center top; */
     background-repeat: no-repeat;
     background-size: cover;
