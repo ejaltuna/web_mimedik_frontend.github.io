@@ -661,9 +661,8 @@
 /*** Counter Start ***/
 .counter {
     position: relative;
-    overflow: hidden;
-    /* background: linear-gradient(rgba(25, 64, 154, 0.9), rgba(25, 64, 154, 1)), url(../img/fact-bg.jpg); */
-    background: linear-gradient(rgb(19 160 59 / 60%), rgb(228 5 128 / 78%)), url(../img/fact-bg.jpg);
+    overflow: hidden; 
+    background: linear-gradient(rgb(249 255 251 / 60%), rgb(228 5 128 / 31%)), url(../img/fact-bg.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1042,4 +1041,25 @@
 .feature-item > * {
     position: relative; /* Coloca el contenido por delante del pseudo-elemento */
     z-index: 2; /* Asegúrate de que el contenido esté por encima del fondo */
+}
+
+/* 
+.carousel-indicators {
+     
+    background: linear-gradient(0deg, rgb(255, 255, 255) 22%, rgba(249, 249, 248, 0) 100%);
+    margin-right: 0%;
+    margin-bottom: 1rem;
+    margin-left: 0%;
+} */
+
+.btnBlog{
+    border-radius: 50px;
+    width: 59%;
+    padding: 10px;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    background-color: deeppink;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
