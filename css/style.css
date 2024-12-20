@@ -1063,3 +1063,19 @@
     margin-bottom: 10px;
     margin-top: 10px;
 }
+
+.floatwp {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 145px;
+    right: 20px;
+    background-color: rgb(37, 211, 102);
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: rgb(153, 153, 153) 2px 2px 3px;
+    z-index: 100;
+
+}

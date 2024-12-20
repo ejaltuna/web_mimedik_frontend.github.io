@@ -68,18 +68,38 @@
 
 
    // Back to top button
-   $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
-        $('.back-to-top').fadeIn('slow');
-    } else {
-        $('.back-to-top').fadeOut('slow');
-    }
-    });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-        return false;
+//    $(window).scroll(function () {
+//     if ($(this).scrollTop() > 1000) {
+//         $('.back-to-top').fadeIn('slow');
+//     } else {
+//         $('.back-to-top').fadeOut('slow');
+//     }
+//     });
+//     $('.back-to-top').click(function () {
+//         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+//         return false;
+//     });
+
+ // JavaScript (jQuery)
+$(document).ready(function () {
+    // Al hacer scroll
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 1000) {
+            $('.back-to-top').fadeIn('slow'); // Muestra el botón
+        } else {
+            $('.back-to-top').fadeOut('slow'); // Oculta el botón
+        }
     });
 
+    // Al hacer clic en el botón
+    $('.back-to-top').click(function () {
+        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo'); // Desplazamiento suave
+        return false; // Previene el comportamiento por defecto
+    });
+});
+
+
+    
 
 })(jQuery);
 
