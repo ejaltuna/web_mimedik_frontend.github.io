@@ -70,7 +70,7 @@ if (1 == 1) {
 				echo "";
 			}
 			// Código para otros casos
-			echo "Accediendo desde un dominio: $host";
+			// echo "Accediendo desde un dominio: $host";
 		}
 
 		// $hostname = "iphglobal.info";
