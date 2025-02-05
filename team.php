@@ -224,7 +224,7 @@ while ($fill = $consul->fetch_assoc()) {
     <!-- Team End -->
 
    <!-- Footer Start -->
-  <div class="container-fluid footer wow fadeIn" data-wow-delay="0.2s">
+   <div class="container-fluid footer wow fadeIn" data-wow-delay="0.2s">
     <div class="container pt-4">
         <div class="row g-5 mb-2 align-items-center">
             <div class="col-lg-7">
@@ -244,7 +244,7 @@ while ($fill = $consul->fetch_assoc()) {
         <div class="row g-5">
             <div class="col-md-6 col-lg-4">
                 <div class="footer-item">
-                    <h3 class="text-white mb-4"><i class="fas fa-map text-primary me-3"></i> SUCRE</h3>
+                    <h3 class="text-white mb-4"><i class="fas fa-map text-primary me-3">SEDE MATRIZ SUCRE</h3>
                     <p class="text-white font-sm">Sucre entre Guayas y 9 de Mayo (diagonal a almacenes TÍA)
                         TELF. (07) 2924324 – EXT. 100 / 099 275 6837
                         LUNES A VIERNES – 08H00 A 20H00
@@ -254,21 +254,22 @@ while ($fill = $consul->fetch_assoc()) {
             </div>
             <div class="col-md-6 col-lg-4">
                 <div class="footer-item text-center">
-                    <h3 class="text-white mb-4"><i class="fas fa-map text-primary me-3"></i> BOYACÁ</h3>
+                    <h3 class="text-white mb-4"><i class="fas fa-map text-primary me-3"></i>SEDE SUCURSAL BOYACÁ </h3>
                     <p class="text-white font-sm">Boyacá entre Tarqui y Colón (frente a la puerta de emergencias del HTD)
                         TELF. (07) 2933962 – EXT. 200 / 096 292 0333
-                        LUNES A SÁBADO – 07H00 A 20H00
-                        DOMINGO – 08H00 A 15H00
+                        LUNES A VIERNES – 06H30 A 22H00
+                        SABADOS – 07H00 A 20H00
+                        DOMINGO – 07H00 A 15H00
                     </p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
                 <div class="footer-item text-center">
-                    <h3 class="text-white mb-4"><i class="fas fa-map text-primary me-3"></i> LABORATORIO</h3>
+                    <h3 class="text-white mb-4"><i class="fas fa-map text-primary me-3"></i> LABORATORIO CLÍNICO</h3>
                     <p class="text-white font-sm"  >Buenavista y Boyacá (junto a farmacia Cruz Azul)
                         TELF. (07) 2960355 – EXT. 124 / 097 917 1127
-                        LUNES A VIERNES – 07H00 A 22H00
-                        SÁBADO – 07H00 A 20H00 - DOMINGO – 08H00 A 15H00
+                        LUNES A VIERNES – 06H30 A 22H00
+                        SÁBADO – 07H00 A 20H00 - DOMINGO – 07H00 A 15H00
                     </p>
                 </div>
             </div>
