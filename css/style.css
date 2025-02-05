@@ -428,7 +428,8 @@
 .bg-breadcrumb-about2{
     position: relative;
     overflow: hidden;
-    background:linear-gradient( rgb(227 0 126 / 42%),rgb(18, 157, 52)), url(../img/sede1.png);
+    /* background:linear-gradient( rgb(227 0 126 / 42%),rgb(18, 157, 52)), url(../img/sede1.png); */
+    background:linear-gradient(rgb(227 0 126 / 42%), rgb(232 244 235)), url(../img/sede1.png);
     background-position: center ;
     /* background-position: center top; */
     background-repeat: no-repeat;
@@ -718,7 +719,8 @@
 /*** Blog Start ***/
 .blog .blog-item {
     border-radius: 10px;
-    background: var(--bs-light);
+    /* background: var(--bs-light); */
+    background: var(--bs-white) !important;
     transition: 0.5s;
 }
 
@@ -969,7 +971,8 @@
 .footer {
     /* background: var(--bs-dark); */
    
-    background: linear-gradient(360deg, #e3007e, #13a238);
+    /* background: linear-gradient(360deg, #e3007e, #13a238); */
+    background: linear-gradient(360deg, #e3007e, #ffffff00);
 }
 
 .footer .footer-item a {
@@ -979,7 +982,7 @@
 }
 
 .footer .footer-item p {
-    line-height: 35px;
+    line-height: 25px;
 }
 
 .footer .footer-item a:hover {
@@ -1079,3 +1082,16 @@
     z-index: 100;
 
 }
+
+
+.font-sm{
+    font-size: 13px !important;
+}
+.font-md{
+    font-size: 14px !important;
+    font-weight: 200;
+}
+.footer .footer-item p {
+    line-height: 24px !important;
+}
+ 
