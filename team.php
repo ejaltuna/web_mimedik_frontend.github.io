@@ -284,7 +284,7 @@ while ($fill = $consul->fetch_assoc()) {
         <div class="container">
             <div class="row g-4 align-items-center">
                 <div class="col-md-6 text-center text-md-start mb-md-0">
-                    <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i> Copyright 2024 MIMEDIK S.A</a> Todos los derechos reservados.</span>
+                    <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i> Copyright 2024 MIMEDIK S.A</a> <span class="text-white"> Todos los derechos reservados.</span></span>
                     <a href="https://api.whatsapp.com/send?phone=580000000&amp;text=Hola,%20 estoy%20en%20Mimedik%20enlinea.%20Quisiera%20m%C3%A1s%20informaci%C3%B3n." rel="noreferrer noopener" target="_blank" class=" floatwp"><svg class="floatwp" fill="#fff" height="800px" width="800px" version="1.1" id="Layer_1" viewBox="0 0 308 308">
                             <g id="XMLID_468_">
                                 <path id="XMLID_469_" d="M227.904,176.981c-0.6-0.288-23.054-11.345-27.044-12.781c-1.629-0.585-3.374-1.156-5.23-1.156
