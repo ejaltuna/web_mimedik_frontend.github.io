@@ -7,9 +7,7 @@ if (1 == 1) {
 	// $variable=addslashes(trim($_GET['seguridad']));
 
 	if (2 == 2) {
-
-
-
+ 
 		// Condicionar según el host
 		if ($host === 'localhost' || $host === '127.0.0.1') {
 			// Código para localhost
@@ -24,9 +22,7 @@ if (1 == 1) {
 
 			if ($mysqli->connect_errno) {
 
-				die("Fallo la conexio: (" . $mysqli->mysqli_connect_errno()
-
-					. ") " . $mysqli->mysqli_connect_error());
+				die("Fallo la conexio: (" . $mysqli->mysqli_connect_errno() . ") " . $mysqli->mysqli_connect_error());
 			} else {
 
 				echo "";

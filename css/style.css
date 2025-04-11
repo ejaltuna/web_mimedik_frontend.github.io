@@ -91,7 +91,8 @@
     position: relative;
     margin-right: 25px;
     padding: 30px 0;
-    color: var(--bs-white);
+    /* color: var(--bs-white); */
+    color: var(--bs-dark);
     font-size: 14px;
     font-weight: 400;
     outline: none;
@@ -195,6 +196,7 @@
         border-left: 0;
         border-style: dotted;
         z-index: 999;
+        background-color: aliceblue;
     }
     
     .sticky-top.navbar-light {
@@ -422,7 +424,7 @@
     /* background-position: center top; */;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 60px 0 0px 0;
+    padding: 270px 0 0px 0;
     transition: 0.5s;
 }
 .bg-breadcrumb-about2{
@@ -434,7 +436,7 @@
     /* background-position: center top; */
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 60px 0 0px 0;
+    padding: 270px 0 0px 0;
     transition: 0.5s;
 }
 .bg-breadcrumb1 {
@@ -445,7 +447,7 @@
     /* background-position: center top; */
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 60px 0 0px 0;
+    padding: 270px 0 0px 0;
     transition: 0.5s;
 }
 .bg-breadcrumb2 {
@@ -456,7 +458,7 @@
     /* background-position: center top; */
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 60px 0 0px 0;
+    padding: 270px 0 0px 0;
     transition: 0.5s;
 }
 .bg-breadcrumb3 {
@@ -467,7 +469,7 @@
     /* background-position: center top; */
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 60px 0 0px 0;
+    padding: 270px 0 0px 0;
     transition: 0.5s;
 }
 

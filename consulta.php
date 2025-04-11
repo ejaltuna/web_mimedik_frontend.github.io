@@ -4,7 +4,7 @@ include 'conexion.php';
 if (isset($_POST['query'])) {
  
     $query = addslashes($_POST['query']);
-    $sql = "SELECT * FROM Médicos WHERE nombre LIKE '%$query%'"; // Cambia 'cards' por tu tabla
+    $sql = "SELECT * FROM medicos WHERE nombre LIKE '%$query%'"; // Cambia 'cards' por tu tabla
     // $sql = "SELECT Médico.*, especialidad.descipcion as especialidad  FROM Médico, especialidad WHERE Médico.nombres LIKE '%$query%' AND Médico.id_especialidad = especialidad.id"; // Cambia 'cards' por tu tabla
     // $result = mysqli_query($conn, $sql);
     $consul = $mysqli->query($sql);

@@ -2,15 +2,17 @@
 require_once('conexion.php'); // Ensure the path is correct and accessible
 // $conn = new mysqli("localhost","root","","mimedik");
 /// resto del codigo
-header('Content-Type: text/html; charset=utf-8');
+// header('Content-Type: text/html; charset=utf-8');
 
-$consul = $mysqli->query("select Médico.*, especialidad.descipcion as especialidad  from Médico, especialidad WHERE  Médico.id_especialidad = especialidad.id");
+// $consul = $mysqli->query("SELECT medico.*, especialidad.descripcion AS especialidad 
+// FROM medico 
+// JOIN especialidad ON medico.id_especialidad = especialidad.id");
 
 
-while ($fill = $consul->fetch_assoc()) {
+// while ($fill = $consul->fetch_assoc()) {
 
-    //   echo '<p value="' . $fill['id'] . '">' . $fill['nombres'] . ' --> $' . $fill['id_especialidad'] . ' <smail class="text-red">'.$fill['apellidos'].'</smail>  </p>';
-}
+//     //   echo '<p value="' . $fill['id'] . '">' . $fill['nombres'] . ' --> $' . $fill['id_especialidad'] . ' <smail class="text-red">'.$fill['apellidos'].'</smail>  </p>';
+// }
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -33,7 +35,7 @@ while ($fill = $consul->fetch_assoc()) {
     <!-- Icon Font Stylesheet -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <link rel="stylesheet" href="css/fontawesome.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -47,17 +49,7 @@ while ($fill = $consul->fetch_assoc()) {
     <link href="css/style.css" rel="stylesheet">
 </head>
 <style>
-    /* .container {
-    display: flex; 
-    flex-wrap: wrap;
-}
-
-.team-item {
-    width: 250px; 
-    height: 300px;
-    margin: 10px;
-    overflow: hidden;
-} */
+  
 #card-Médico {
     display: flex;
     flex-wrap: wrap;
@@ -76,9 +68,7 @@ while ($fill = $consul->fetch_assoc()) {
 
 .bg-light {
     flex-shrink: 0; /* Evita que la parte inferior de la tarjeta se reduzca */
-}
-
-
+} 
 </style>
 <body>
 
@@ -106,15 +96,7 @@ while ($fill = $consul->fetch_assoc()) {
 
                     <a href="about.html" class="nav-item nav-link">Nosotros</a>
                     <a href="service.html" class="nav-link nav-item">Servicios Médicos</a>
-                    <!-- <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Servicios Médicos</a>
-                            <div class="dropdown-menu m-0">
-                                 <a href="sedeSucre.html" class="dropdown-item active">SUCRE</a>
-                                <a href="sedeBoyaca.html" class="dropdown-item">BOYACÁ</a>
-                                <a href="sedeLaboratorio.html" class="dropdown-item">LABORATORIO</a>
-                                
-                            </div>
-                        </div> -->
+                   
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sedes</a>
                         <div class="dropdown-menu m-0">
@@ -125,8 +107,7 @@ while ($fill = $consul->fetch_assoc()) {
                         </div>
                     </div>
                     <a href="team.php" class="nav-item nav-link active">Staff Médico</a>
-                    <!-- <a href="service.html" class="nav-item nav-link">Servicios Médicos</a> -->
-                    <!-- <a href="blog.html" class="nav-item nav-link">Blog</a> -->
+                   
 
                     <a href="contact.html" class="nav-item nav-link">Contacto</a>
                 </div>
@@ -181,9 +162,9 @@ while ($fill = $consul->fetch_assoc()) {
  
 
             <div class="row g-1" id="card-Médico" style="justify-content: center;">
-                <?php
+                 <?php
                 //  $sql = "SELECT Médico.*, especialidad.descipcion as especialidad  FROM Médico, especialidad WHERE  Médico.id_especialidad = especialidad.id"; // Cambia 'cards' por tu tabla
-                $sql = "SELECT * FROM Médicos"; // Cambia 'cards' por tu tabla
+                $sql = "SELECT * FROM medicos"; // Cambia 'cards' por tu tabla
                 // $result = mysqli_query($conn, $sql);
                 $consul = $mysqli->query($sql);
 
@@ -216,7 +197,7 @@ while ($fill = $consul->fetch_assoc()) {
                 } else {
                     echo '<p>No se encontraron resultados.</p>';
                 }
-                ?>
+                ?>  
                 <!-- //aqui  el card de Médicos -->
             </div>
         </div>
@@ -244,7 +225,7 @@ while ($fill = $consul->fetch_assoc()) {
         <div class="row g-5">
             <div class="col-md-6 col-lg-4">
                 <div class="footer-item">
-                    <h3 class="text-white mb-4"><i class="fas fa-map text-primary me-3">SEDE MATRIZ SUCRE</h3>
+                    <h3 class="text-white mb-4"><i class="fas fa-map text-primary me-3"></i>SEDE MATRIZ SUCRE</h3>
                     <p class="text-white font-sm">Sucre entre Guayas y 9 de Mayo (diagonal a almacenes TÍA)
                         TELF. (07) 2924324 – EXT. 100 / 099 275 6837
                         LUNES A VIERNES – 08H00 A 20H00
