@@ -35,7 +35,7 @@ require_once('conexion.php'); // Ensure the path is correct and accessible
     <!-- Icon Font Stylesheet -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <link rel="stylesheet" href="css/fontawesome.css" />
-          <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -49,29 +49,37 @@ require_once('conexion.php'); // Ensure the path is correct and accessible
     <link href="css/style.css" rel="stylesheet">
 </head>
 <style>
-  
-#card-Médico {
-    display: flex;
-    flex-wrap: wrap;
-}
-.team-item {
-    width: 100%; /* Asegura que cada tarjeta ocupe el 100% del ancho de su contenedor */
-    max-width: 300px; /* Establece un ancho máximo para las tarjetas */
-    height: 430px; /* Establece una altura fija para todas las tarjetas */
-    margin: 10px; /* Espaciado entre tarjetas */
-    display: flex;
-    flex-direction: column; /* Permite que los elementos internos se apilen verticalmente */
-}
-.team-inner {
-    flex-grow: 1; /* Permite que el contenido interno crezca para llenar el espacio disponible */
-}
+    #card-Médico {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-.bg-light {
-    flex-shrink: 0; /* Evita que la parte inferior de la tarjeta se reduzca */
-} 
+    .team-item {
+        width: 100%;
+        /* Asegura que cada tarjeta ocupe el 100% del ancho de su contenedor */
+        max-width: 300px;
+        /* Establece un ancho máximo para las tarjetas */
+        height: 430px;
+        /* Establece una altura fija para todas las tarjetas */
+        margin: 10px;
+        /* Espaciado entre tarjetas */
+        display: flex;
+        flex-direction: column;
+        /* Permite que los elementos internos se apilen verticalmente */
+    }
+
+    .team-inner {
+        flex-grow: 1;
+        /* Permite que el contenido interno crezca para llenar el espacio disponible */
+    }
+
+    .bg-light {
+        flex-shrink: 0;
+        /* Evita que la parte inferior de la tarjeta se reduzca */
+    }
 </style>
-<body>
 
+<body>
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -79,12 +87,10 @@ require_once('conexion.php'); // Ensure the path is correct and accessible
         </div>
     </div>
     <!-- Spinner End -->
-
     <!-- Navbar & Hero Start -->
     <div class="container-fluid position-relative p-0 montserrat">
         <nav class="navbar navbar-expand-lg navbar-light px-5 px-lg-4 py-3 py-lg-0">
             <a href="" class="navbar-brand p-2">
-
                 <img src="img/Logo.png" alt="Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -93,25 +99,19 @@ require_once('conexion.php'); // Ensure the path is correct and accessible
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-2">
                     <a href="index.html" class="nav-item nav-link">Inicio</a>
-
                     <a href="about.html" class="nav-item nav-link">Nosotros</a>
                     <a href="service.html" class="nav-link nav-item">Servicios Médicos</a>
-                   
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sedes</a>
                         <div class="dropdown-menu m-0">
-                            <a href="sedeSucre.html" class="dropdown-item active">SUCRE</a>
-                            <a href="sedeBoyaca.html" class="dropdown-item">BOYACÁ</a>
-                            <a href="sedeLaboratorio.html" class="dropdown-item">LABORATORIO</a>
-
+                            <a href="sedeSucre.html" class="dropdown-item  ">Mimedik Matriz</a>
+                            <a href="sedeBoyaca.html" class="dropdown-item">Mimedik Sucursal</a>
+                            <a href="sedeLaboratorio.html" class="dropdown-item">Laboratorio Clínico</a>
                         </div>
                     </div>
                     <a href="team.php" class="nav-item nav-link active">Staff Médico</a>
-                   
-
                     <a href="contact.html" class="nav-item nav-link">Contacto</a>
                 </div>
-
             </div>
         </nav>
 
@@ -120,8 +120,8 @@ require_once('conexion.php'); // Ensure the path is correct and accessible
             <div class="container text-center py-5" style="max-width: 900px;">
                 <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Staff Médico</h4>
                 <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
-                    <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-                    <li class="breadcrumb-item ">Staff Médico</li>
+                    <li class="breadcrumb-item"><a href="index.html" style=" color:#e3007e !important;">Inicio</a></li>
+                    <li class="breadcrumb-item text-white">Staff Médico</li>
                 </ol>
             </div>
         </div>
@@ -149,25 +149,22 @@ require_once('conexion.php'); // Ensure the path is correct and accessible
     <!-- Modal Search End -->
 
     <!-- Team Start -->
-    <div class="container-fluid team py-5">
+    <div class="container-fluid team py-3">
         <div class="  py-5">
-            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 900px;">
+                <h2 class="display-5 mb-3">Contamos con los Médicos más capacitados.</h2>
                 <h4 class="text-uppercase text-primary">Médicos</h4>
-                <h1 class="display-3 text-capitalize mb-3">Contamos con los Médicos más capacitados.</h1>
-                <p class="mb-5 fs-5 text-black fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.5s" style="animation-delay: 1.5s;"> Encuentra un médico según tu necesidad, en <strong> Mimedik</strong> contamos con un staff altamente capacitado para atenderte. </p>
-                <h1>Buscar Médico</h1>
-                <input type="text" id="search" onKeyDown="Buscar()" class="form-control" placeholder="Buscar...">
-                <div id="results" class="row mt-3"></div>
+                <p class="mb-2 fs-5 text-black fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.5s" style="animation-delay: 1.5s;"> Encuentra un médico según tu necesidad, en <strong> Mimedik</strong> contamos con un staff altamente capacitado para atenderte. </p>
+                <h4>Buscar Médico.</h4>
+                <input type="text" id="search" onKeyDown="Buscar()" class="form-control animated"  data-animation="fadeInLeft" data-delay="1.5s" placeholder="Buscar...">
+                <div id="results" class="row mt-2"></div>
             </div>
- 
-
             <div class="row g-1" id="card-Médico" style="justify-content: center;">
-                 <?php
+                <?php
                 //  $sql = "SELECT Médico.*, especialidad.descipcion as especialidad  FROM Médico, especialidad WHERE  Médico.id_especialidad = especialidad.id"; // Cambia 'cards' por tu tabla
                 $sql = "SELECT * FROM medicos"; // Cambia 'cards' por tu tabla
                 // $result = mysqli_query($conn, $sql);
                 $consul = $mysqli->query($sql);
-
                 if (mysqli_num_rows($consul) > 0) {
                     while ($row = mysqli_fetch_assoc($consul)) {
                         echo ' <div class="col-sm-4 col-lg-3 col-xl-2 wow fadeInUp" data-wow-delay="0.4s" id="card-Médico">';
@@ -197,67 +194,67 @@ require_once('conexion.php'); // Ensure the path is correct and accessible
                 } else {
                     echo '<p>No se encontraron resultados.</p>';
                 }
-                ?>  
+                ?>
                 <!-- //aqui  el card de Médicos -->
             </div>
         </div>
     </div>
     <!-- Team End -->
 
-   <!-- Footer Start -->
-   <div class="container-fluid footer wow fadeIn" data-wow-delay="0.2s">
-    <div class="container pt-4">
-        <div class="row g-5 mb-2 align-items-center">
-            <div class="col-lg-7">
-                <div class="position-relative mx-auto">
-                    <img src="img/Logo.png" alt="Logo" class="w-25">
+    <!-- Footer Start -->
+    <div class="container-fluid footer wow fadeIn" data-wow-delay="0.2s">
+        <div class="container pt-4">
+            <div class="row g-5 mb-2 align-items-center">
+                <div class="col-lg-7">
+                    <div class="position-relative mx-auto">
+                        <img src="img/Logo.png" alt="Logo" class="w-25">
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-end">
+                        <a class="btn btn-secondary btn-md-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-secondary btn-md-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-secondary btn-md-square rounded-circle me-3" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-secondary btn-md-square rounded-circle me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-5">
-                <div class="d-flex align-items-center justify-content-center justify-content-lg-end">
-                    <a class="btn btn-secondary btn-md-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-secondary btn-md-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-secondary btn-md-square rounded-circle me-3" href="#"><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-secondary btn-md-square rounded-circle me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
+            <div class="row g-5 mt-2">
+                <div class="col-md-6 col-lg-4">
+                    <div class="footer-item">
+                        <h3 class="text-white mb-4"><i class="fas fa-map text-primary me-3"></i>SEDE MATRIZ SUCRE</h3>
+                        <p class="text-white font-sm">Sucre entre Guayas y 9 de Mayo (diagonal a almacenes TÍA)
+                            TELF. (07) 2924324 – EXT. 100 / 099 275 6837
+                            LUNES A VIERNES – 08H00 A 20H00
+                            SÁBADO – 08H00 A 15H00
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="row g-5">
-            <div class="col-md-6 col-lg-4">
-                <div class="footer-item">
-                    <h3 class="text-white mb-4"><i class="fas fa-map text-primary me-3"></i>SEDE MATRIZ SUCRE</h3>
-                    <p class="text-white font-sm">Sucre entre Guayas y 9 de Mayo (diagonal a almacenes TÍA)
-                        TELF. (07) 2924324 – EXT. 100 / 099 275 6837
-                        LUNES A VIERNES – 08H00 A 20H00
-                        SÁBADO – 08H00 A 15H00
-                    </p>
+                <div class="col-md-6 col-lg-4">
+                    <div class="footer-item text-center">
+                        <h3 class="text-white mb-4"><i class="fas fa-map text-primary me-3"></i>SEDE SUCURSAL BOYACÁ </h3>
+                        <p class="text-white font-sm">Boyacá entre Tarqui y Colón (frente a la puerta de emergencias del HTD)
+                            TELF. (07) 2933962 – EXT. 200 / 096 292 0333
+                            LUNES A VIERNES – 06H30 A 22H00
+                            SABADOS – 07H00 A 20H00
+                            DOMINGO – 07H00 A 15H00
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="footer-item text-center">
-                    <h3 class="text-white mb-4"><i class="fas fa-map text-primary me-3"></i>SEDE SUCURSAL BOYACÁ </h3>
-                    <p class="text-white font-sm">Boyacá entre Tarqui y Colón (frente a la puerta de emergencias del HTD)
-                        TELF. (07) 2933962 – EXT. 200 / 096 292 0333
-                        LUNES A VIERNES – 06H30 A 22H00
-                        SABADOS – 07H00 A 20H00
-                        DOMINGO – 07H00 A 15H00
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="footer-item text-center">
-                    <h3 class="text-white mb-4"><i class="fas fa-map text-primary me-3"></i> LABORATORIO CLÍNICO</h3>
-                    <p class="text-white font-sm"  >Buenavista y Boyacá (junto a farmacia Cruz Azul)
-                        TELF. (07) 2960355 – EXT. 124 / 097 917 1127
-                        LUNES A VIERNES – 06H30 A 22H00
-                        SÁBADO – 07H00 A 20H00 - DOMINGO – 07H00 A 15H00
-                    </p>
+                <div class="col-md-6 col-lg-4">
+                    <div class="footer-item text-center">
+                        <h3 class="text-white mb-4"><i class="fas fa-map text-primary me-3"></i> LABORATORIO CLÍNICO</h3>
+                        <p class="text-white font-sm">Buenavista y Boyacá (junto a farmacia Cruz Azul)
+                            TELF. (07) 2960355 – EXT. 124 / 097 917 1127
+                            LUNES A VIERNES – 06H30 A 22H00
+                            SÁBADO – 07H00 A 20H00 - DOMINGO – 07H00 A 15H00
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Footer End -->
+    <!-- Footer End -->
 
 
 
@@ -266,8 +263,8 @@ require_once('conexion.php'); // Ensure the path is correct and accessible
         <div class="container">
             <div class="row g-4 align-items-center">
                 <div class="col-md-6 text-center text-md-start mb-md-0">
-                    <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i> Copyright 2024 MIMEDIK S.A</a> <span class="text-white"> Todos los derechos reservados.</span></span>
-                    <a href="https://api.whatsapp.com/send?phone=580000000&amp;text=Hola,%20 estoy%20en%20Mimedik%20enlinea.%20Quisiera%20m%C3%A1s%20informaci%C3%B3n." rel="noreferrer noopener" target="_blank" class=" floatwp"><svg class="floatwp" fill="#fff" height="800px" width="800px" version="1.1" id="Layer_1" viewBox="0 0 308 308">
+                    <span class="text-body"><a href="mimedik.ec" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i> Copyright 2025 mimedik</a> <span class="text-white"> Todos los derechos reservados.</span></span>
+                    <a href="https://api.whatsapp.com/send?phone=593983365596&amp;text=Hola,%20 estoy%20en%20Mimedik%20enlinea.%20Quisiera%20m%C3%A1s%20informaci%C3%B3n." rel="noreferrer noopener" target="_blank" class=" floatwp"><svg class="floatwp" fill="#fff" height="800px" width="800px" version="1.1" id="Layer_1" viewBox="0 0 308 308">
                             <g id="XMLID_468_">
                                 <path id="XMLID_469_" d="M227.904,176.981c-0.6-0.288-23.054-11.345-27.044-12.781c-1.629-0.585-3.374-1.156-5.23-1.156
                         c-3.032,0-5.579,1.511-7.563,4.479c-2.243,3.334-9.033,11.271-11.131,13.642c-0.274,0.313-0.648,0.687-0.872,0.687
