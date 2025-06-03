@@ -110,7 +110,13 @@ require_once('conexion.php'); // Ensure the path is correct and accessible
                         </div>
                     </div>
                     <a href="team.php" class="nav-item nav-link active">Staff Médico</a>
-                    <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                     <a href="contact.html" class="nav-item nav-link">Contacto</a>
+  <a href="https://mimedik.orion-labs.com/consulta-resultados/login" 
+                    target="_blank" 
+                    class="btn btn-outline-primary" 
+                    style="height: 10%; max-width: 30%; font-size: 12px; margin-block: auto;">
+                       Descarga tus Resultados de Laboratorio
+                    </a>
                 </div>
             </div>
         </nav>
